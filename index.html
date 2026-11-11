@@ -1,0 +1,124 @@
+<!doctype html>
+<!--
+  holdstory 개발자 페이지 (GitHub Pages: https://holdstory.github.io/)
+  구글 플레이 '개발자 웹사이트'로 쓴다. 나중에 광고(AdMob)를 붙이면 이 폴더 맨 위에 app-ads.txt 를 더한다.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>holdstory</title>
+    <meta name="description" content="holdstory makes small apps for learning languages. Sinabro: learn Korean with puzzles." />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f7f3ec;
+        --card: #ffffff;
+        --ink: #1f2933;
+        --soft: #586270;
+        --line: #e6dfd3;
+        --brand: #c2410c;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #15181d;
+          --card: #1f242b;
+          --ink: #e8eaed;
+          --soft: #a9b1bb;
+          --line: #333a44;
+          --brand: #f08a5d;
+        }
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font: 16px/1.6 -apple-system, system-ui, 'Segoe UI', Roboto, 'Noto Sans CJK JP', 'Noto Sans CJK TC', 'Malgun Gothic', sans-serif;
+      }
+      main {
+        max-width: 680px;
+        margin: 0 auto;
+        padding: 40px 16px 56px;
+        display: grid;
+        gap: 24px;
+      }
+      h1 {
+        margin: 0;
+        font-size: 30px;
+        letter-spacing: -0.02em;
+      }
+      .lede {
+        margin: 4px 0 0;
+        color: var(--soft);
+      }
+      .app {
+        display: grid;
+        grid-template-columns: 72px 1fr;
+        gap: 16px;
+        align-items: start;
+        padding: 20px;
+        border-radius: 18px;
+        background: var(--card);
+        border: 1px solid var(--line);
+      }
+      .app img {
+        width: 72px;
+        height: 72px;
+        border-radius: 18px;
+      }
+      .app h2 {
+        margin: 0;
+        font-size: 21px;
+      }
+      .app .ko {
+        color: var(--brand);
+        font-weight: 700;
+        font-size: 15px;
+      }
+      .app p {
+        margin: 6px 0 0;
+      }
+      .langs {
+        color: var(--soft);
+        font-size: 14px;
+      }
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 16px;
+        margin-top: 10px;
+      }
+      a {
+        color: var(--brand);
+        font-weight: 600;
+      }
+      footer {
+        color: var(--soft);
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>holdstory</h1>
+        <p class="lede">Small apps for learning languages, a few minutes a day.</p>
+      </header>
+
+      <section class="app">
+        <img src="sinabro/icon-192.png" alt="Sinabro app icon" width="72" height="72" />
+        <div>
+          <h2>Sinabro <span class="ko" lang="ko">시나브로</span></h2>
+          <p>Learn Korean with crosswords, numbers and everyday phrases. Sinabro is a native Korean word that means “little by little, without noticing.”</p>
+          <p class="langs" lang="ja">クロスワード・数字・フレーズで韓国語を少しずつ覚えるアプリ</p>
+          <p class="langs" lang="zh-Hant">用填字、數字和短句一點一點學韓語的 App</p>
+          <div class="links">
+            <a href="sinabro/privacy-policy.html">Privacy policy</a>
+          </div>
+        </div>
+      </section>
+
+      <footer>Contact: <a href="mailto:holdstory@gmail.com">holdstory@gmail.com</a></footer>
+    </main>
+  </body>
+</html>
